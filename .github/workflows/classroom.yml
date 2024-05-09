@@ -19,6 +19,11 @@ jobs:
       - name: Check HTML structure
         run: |
           # Search for the existence of required HTML tags
+          if ! grep -q '<!DOCTYPE' index.html; then
+            echo "HTML tag <!DOCTYPE> not found"
+            exit 1
+          fi
+          
           if ! grep -q '<html' index.html; then
             echo "HTML tag <html> not found"
             exit 1
