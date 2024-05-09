@@ -16,9 +16,6 @@ jobs:
       - name: Checkout code
         uses: actions/checkout@v2
 
-      - name: Install dependencies
-        run: npm install # You might not need this if you're using built-in tools
-
       - name: Check HTML structure
         run: |
           # Search for the existence of required HTML tags
