@@ -14,8 +14,10 @@ In this week, you will set up a basic HTML template for the Expense Tracker Appl
         4. header
         5. heading
         6. paragraph
-        7. basi registration form
+        7. basic registration form
         8. table displaying common user information: name, email, phone number.
+        9. an image
+        10. an external link to https://google.com
         
 
 ### Submission:
