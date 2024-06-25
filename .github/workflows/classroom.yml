@@ -19,7 +19,7 @@ jobs:
       - name: Check HTML structure
         run: |
           # Search for the existence of required HTML tags
-          if ! grep -q '<!DOCTYPE' index.html; then
+          if ! grep -q '<!DOCTYPE html>' index.html; then
             echo "HTML tag <!DOCTYPE> not found"
             exit 1
           fi
@@ -84,7 +84,7 @@ jobs:
             exit 1
           fi
 
-          if ! grep -q '<a href="https://google.com ' index.html; then
+          if ! grep -q '<a href="https://google.com" ' index.html; then
             echo "HTML tag <a href="https://google.com> not found"
             exit 1
           fi
