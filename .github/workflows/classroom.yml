@@ -39,6 +39,11 @@ jobs:
             exit 1
           fi
 
+          if ! grep -q '<meta viewport' index.html; then
+            echo "HTML tag <meta viewport> not found"
+            exit 1
+          fi
+
           if ! grep -q '<title>' index.html; then
             echo "HTML tag <title> not found"
             exit 1
@@ -64,8 +69,23 @@ jobs:
             exit 1
           fi
 
-          if ! grep -q '<footer' index.html; then
-            echo "HTML tag <footer> not found"
+          if ! grep -q '<form' index.html; then
+            echo "HTML tag <form> not found"
+            exit 1
+          fi
+
+          if ! grep -q '<table' index.html; then
+            echo "HTML tag <table> not found"
+            exit 1
+          fi
+
+          if ! grep -q '<img' index.html; then
+            echo "HTML tag <img> not found"
+            exit 1
+          fi
+
+          if ! grep -q '<a href="https://google.com ' index.html; then
+            echo "HTML tag <a href="https://google.com> not found"
             exit 1
           fi
 
