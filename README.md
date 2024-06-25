@@ -20,5 +20,5 @@ In this week, you will set up a basic HTML template for the Expense Tracker Appl
         
 
 ### Submission:
-        Submit the link to your GitHub repository for evaluation through the GitHub Classrooms assignment.
+        When you push and commit changes to the index.html file, your submission will be received for evaluation.
 
