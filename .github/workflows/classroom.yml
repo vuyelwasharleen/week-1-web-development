@@ -94,3 +94,4 @@ jobs:
       - name: Display results
         run: |
           echo "HTML structure tests completed successfully"
+          
